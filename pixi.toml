@@ -1,0 +1,13 @@
+[workspace]
+authors = ["abhilashingale <aingale@synapticon.com>"]
+channels = ["conda-forge"]
+name = "vesoma-alpha-imu-evaluation"
+platforms = ["linux-64"]
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
+pandas = ">=3.0.1,<4"
+matplotlib = ">=3.10.8,<4"
+pyserial = ">=3.5,<4"
