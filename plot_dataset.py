@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 data_dir = 'data'
 files = [f for f in os.listdir(data_dir) if f.endswith('.csv') or f.endswith('.txt')]
 
-files =  ['BAUD_1M_I2C_FREQ_400kHZ_UPDATE_FREQ_400Hz_BNO085_exp_05_500us_wait_I2C.csv']
+files =  ["BAUD_1M_I2C_FREQ_400kHZ_UPDATE_FREQ_400Hz_BNO085_exp_06_500us_wait_I2C_game_Rotation_vector.csv"]
 
 for fname in files:
     path = os.path.join(data_dir, fname)
@@ -21,9 +21,9 @@ for fname in files:
     acc_x = df.iloc[:, 5]
     acc_y = df.iloc[:, 6]
     acc_z = df.iloc[:, 7]
-    # gyro_x = df.iloc[:, 8]
-    # gyro_y = df.iloc[:, 9]
-    # gyro_z = df.iloc[:, 10]
+    gyro_x = df.iloc[:, 8]
+    gyro_y = df.iloc[:, 9]
+    gyro_z = df.iloc[:, 10]
 
     # Create a figure with 3 rows (one for each plot type)
     fig, axs = plt.subplots(3, 1, figsize=(12, 14))

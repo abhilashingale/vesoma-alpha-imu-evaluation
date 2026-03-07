@@ -26,7 +26,7 @@ if __name__ == "__main__":
     plots_dir = 'histograms'
     os.makedirs(plots_dir, exist_ok=True)
 
-    csv_files = ["BAUD_1M_I2C_FREQ_400kHZ_UPDATE_FREQ_400Hz_BNO085_exp_01_different_update_rates_200us_waitI2C.csv", "BAUD_1M_I2C_FREQ_400kHZ_UPDATE_FREQ_400Hz_BNO085_exp_02_different_update_rates_100us_waitI2C.csv","BAUD_1M_I2C_FREQ_400kHZ_UPDATE_FREQ_400Hz_BNO085_exp_04_500us_wait_I2C_quat_and_gyro_only.csv","BAUD_1M_I2C_FREQ_400kHZ_UPDATE_FREQ_400Hz_BNO085_exp_05_500us_wait_I2C.csv"] 
+    csv_files = ["BAUD_1M_I2C_FREQ_400kHZ_UPDATE_FREQ_400Hz_BNO085_exp_07_500us_wait_I2C_game_Rotation_vector_no_Gyro.csv"] 
 
     for filename in csv_files:
         filepath = os.path.join(data_dir, filename)
